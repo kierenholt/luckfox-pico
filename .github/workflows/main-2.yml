@@ -18,7 +18,7 @@ jobs:
           name: rootfs-alpine
           path: output/rootfs-alpine.tar.gz
   build-system:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: build-rootfs
     steps:
       - name: checkout
